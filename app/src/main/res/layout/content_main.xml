@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="25"
+        android:background="@drawable/shape_linear"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR PROFILE PERFORMANCE"
+            android:textColor="#888888" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/search_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_c"
+                    android:text="SEARCH APPEARANCES"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/recrute_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recrute_c"
+                    android:text="RECRUITER ACTIONS"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="40"
+        android:padding="20dp"
+        android:background="@drawable/shape_linear"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:weightSum="300">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:id="@+id/rj_c"
+                android:layout_centerVertical="true"
+                android:textColor="@color/th_purple"
+                android:textSize="40sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="RECOMMENDED JOBS"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/rj_c"
+                android:textStyle="bold"
+                android:textColor="@color/th_purple"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:id="@+id/sj_c"
+                android:layout_centerVertical="true"
+                android:textColor="@color/th_purple"
+                android:textSize="40sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SAVED JOBS"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/sj_c"
+                android:textStyle="bold"
+                android:textColor="@color/th_purple"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="CREATE CUSTOM JOB ALERT"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/th_purple"
+                android:layout_centerInParent="true"
+                android:id="@+id/c_cus_j"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Start getting jobs on your email"
+                android:layout_below="@id/c_cus_j"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

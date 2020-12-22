@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_weight="20">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_icon"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_below="@id/logo_icon"
+            android:text="LOGIN"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/login_button"
+            android:backgroundTint="@color/th_purple"
+            app:cornerRadius="10dp"
+            android:textSize="20sp"
+            android:layout_height="50dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_below="@id/login_button"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/signin_button"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/th_purple"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Continue Using"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lbl_cu"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/signin_button"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lbl_cu"
+            android:id="@+id/fmt_v"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="0dp"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_below="@id/lbl_cu"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/g_lgb"
+            android:background="@drawable/gicon"
+            android:layout_toLeftOf="@id/fmt_v"
+            android:layout_height="40dp"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_below="@id/lbl_cu"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/fb_lbl"
+            android:layout_toRightOf = "@id/fmt_v"
+            android:background="@drawable/fbicon"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+</LinearLayout>

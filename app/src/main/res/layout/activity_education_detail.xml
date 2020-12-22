@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/sll_1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Education Details"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Select your Highest Qualification"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/choosequali"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1_cq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctrate or PhD"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2_cq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post Graduate"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3_cq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diploma"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4_cq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class XII"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip5_cq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class X"/>
+                </com.google.android.material.chip.ChipGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Select Examination Board"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chooseboard"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                            android:text="Rajasthan"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CBSE"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ICSE"/>
+                </com.google.android.material.chip.ChipGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Select Language Medium"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/choosemedium"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1_cm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2_cm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hindi"/>
+                </com.google.android.material.chip.ChipGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Passing Year"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/passingyear"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1_py"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2_py"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3_py"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4_py"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip5_py"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Before 2017"/>
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/edu_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_below="@id/sll_1"
+                android:layout_margin="16dp"
+                android:text="Next"
+                android:backgroundTint="@color/th_purple"
+                android:textColor="#ffffff"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
